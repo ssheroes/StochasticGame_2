@@ -15,7 +15,7 @@ classdef SoccerTester < handle
         function obj = SoccerTester(game,StepCntTotal)
             obj.game = game;       
             obj.StepCntTotal = StepCntTotal;
-            obj.state_see_set = [4,5,12,13,23,24,25,26,44,46,50,52,57,63];
+            obj.state_see_set = [4,5,12,13,23,24,25,26,44,46,50,52];
             obj.state_see_num = length(obj.state_see_set);
             obj.Pi_see = cell(obj.state_see_num,1);
             for i = 1:obj.state_see_num
@@ -128,7 +128,7 @@ classdef SoccerTester < handle
                     obj.game.restart();
 %                     obj.game.draw();
                 end
-                if(mod(step,obj.StepCntTotal/100)==0)
+                if(mod(step,obj.StepCntTotal/10)==0)
                     SavedName = ['./SavedPlayers/Aplayer_MR_trained',num2str(step)];
                     eval(['save ',SavedName,' playerA']);
                 end
