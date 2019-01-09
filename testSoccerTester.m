@@ -4,8 +4,8 @@ close all;
 clc;
 addpath('Player/');
 addpath('Domain/');
-s = RandStream('mt19937ar','seed',2);
-RandStream.setGlobalStream(s);
+% s = RandStream('mt19937ar','seed',2);
+% RandStream.setGlobalStream(s);
 % kk= randsrc(1,1,[1:5]);
 
 boardH = 4;
