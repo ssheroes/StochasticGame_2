@@ -16,7 +16,7 @@ drawProbability = 0.01;
 StepCntTotal = 1200000;
 decay = 10^(-2/StepCntTotal);
 expl = 0.2;
-gamma = 1-drawProbability;
+gamma = 1-drawProbability
 
 % choose the player type
 %minimaxQPlayer(numStates,numActionsA,numActionsB,decay,expl,gamma)
